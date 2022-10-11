@@ -35,7 +35,7 @@ export const signup = user => {
 
 export const signin = user => {
     console.log(`${API}`);
-    return fetch(`${API}/signin`, {
+    return fetch(`https://blognews1.herokuapp.com/api/signin`, {
         method: 'POST',
         headers: {
             Accept: 'application/json',
