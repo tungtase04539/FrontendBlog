@@ -13,8 +13,7 @@ class MyDocument extends Document {
             href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
           />
           <link rel="stylesheet" href="/css/styles.css" />
-         
-
+          <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Circle-icons-news.svg/1200px-Circle-icons-news.svg.png"/>
 
         </Head>
         <body>

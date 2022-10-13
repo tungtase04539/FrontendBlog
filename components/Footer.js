@@ -1,24 +1,15 @@
 import { useState } from 'react';
-import Link from 'next/link';
+
 import Router from 'next/router';
-import { APP_NAME } from '../config';
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import {FaFacebook} from "react-icons/fa"
 import NProgress from 'nprogress';
-import { signout, isAuth } from '../actions/auth';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
-} from 'reactstrap';
+
 import React from 'react'
-import Search from './blog/Search'
+
 import '.././node_modules/nprogress/nprogress.css';
 
 Router.onRouteChangeStart = url => NProgress.start();
@@ -34,52 +25,22 @@ const Footer = () => {
   };
 
   return (
-    <React.Fragment>
-      <Navbar color="primary" light expand="md">
-        <Link href="/blogs">
-          <NavLink className="font-weight-bold text-light">{APP_NAME}</NavLink>
-        </Link>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
-            <React.Fragment>
-              <NavItem>
-                <Link href="/blogs">
-                  <NavLink className="text-light">Home</NavLink>
-                </Link>
-              </NavItem>
-            </React.Fragment>
+    <>
+			<footer className="bg-secondary text-center ">
 
-
-            {isAuth() && isAuth().role === 0 && (
-              <NavItem>
-                <Link href="/user">
-                  <NavLink>{`${isAuth().name}'s Dashboard`}</NavLink>
-                </Link>
-              </NavItem>
-            )}
-
-            {isAuth() && isAuth().role === 1 && (
-              <NavItem>
-                <Link href="/admin">
-                  <NavLink>{`${isAuth().name}'s Dashboard`}</NavLink>
-                </Link>
-              </NavItem>
-            )}
-
-            {isAuth() && (
-              <NavItem>
-                <NavLink style={{ cursor: 'pointer' }} onClick={() => signout(() => Router.replace(`/signin`))}>
-                  Signout
-                </NavLink>
-              </NavItem>
-            )}
-
-          </Nav>
-        </Collapse>
-      </Navbar>
-
-    </React.Fragment>
+						<div className="">
+							<FaFacebook className="" />
+							<FaTwitter className="" />
+							<FaLinkedin className="" />
+							<FaYoutube className="" />
+						</div>
+        </footer>
+        <style jsx>{`
+        footer{
+          height:30px;
+        }
+      `}</style>
+		</>
   );
 };
 
