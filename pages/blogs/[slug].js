@@ -65,7 +65,7 @@ const SingleBlog = ({ blog, query }) => {
         <div className="col-md-12 lead">{renderHTML(lines[i])}</div>
         {i % 2 == 0 && (
           <div>
-            <MgidWidget id="M838028ScriptRootC1373764" src="https://jsc.mgid.com/m/i/missingperson.online.1373764.js"></MgidWidget>
+            <MgidWidget id={"M838028ScriptRootC1373764" + i} src="https://jsc.mgid.com/m/i/missingperson.online.1373764.js"></MgidWidget>
           </div>
         )}
       </React.Fragment>
