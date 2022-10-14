@@ -62,12 +62,17 @@ const SingleBlog = ({ blog, query }) => {
   const showBlog = (lines) =>
     lines.map((l, i) => (
       <React.Fragment key={i}>
-        <div className="col-md-12 lead">{renderHTML(lines[i])}</div>
-        {i % 6 == 0 && (
-          <div>
-            <MgidWidget id="M838028ScriptRootC1373764"  src="https://jsc.mgid.com/m/i/missingperson.online.1373764.js"></MgidWidget>
-          </div>
-        )}
+        <section>
+          <div className="col-md-12 lead">{renderHTML(lines[i])}</div>
+          {i % 6 == 0 && (
+            <div>
+              <MgidWidget
+                id="M838028ScriptRootC1373764"
+                src="https://jsc.mgid.com/m/i/missingperson.online.1373764.js"
+              ></MgidWidget>
+            </div>
+          )}
+        </section>
       </React.Fragment>
     ));
   const showBlogCategories = (blog) =>
@@ -132,14 +137,12 @@ const SingleBlog = ({ blog, query }) => {
                     #M838028ScriptRootC1373747 {
                       min-height: 300px;
                     }
-                    @media only screen and (max-width: 2000px) and (min-width: 500px) {
-                      img {
-                        width: 500px;
-                      }
-                    }
                   `}</style>
                   {/* header mgid */}
-                  <MgidWidget id="M838028ScriptRootC1373747" src="https://jsc.mgid.com/m/i/missingperson.online.1373747.js"></MgidWidget>
+                  <MgidWidget
+                    id="M838028ScriptRootC1373747"
+                    src="https://jsc.mgid.com/m/i/missingperson.online.1373747.js"
+                  ></MgidWidget>
 
                   <p className="lead mt-3 mark">
                     Written by{" "}
@@ -160,22 +163,26 @@ const SingleBlog = ({ blog, query }) => {
             </div>
             <div className="container">
               <AdUnit />
-              <section>
-                {showBlog(lines)}
-                {/* middle article mgid */}
-              </section>
+
+              {showBlog(lines)}
+              {/* middle article mgid */}
             </div>
 
             <div className="container">
               {/* under article mgid */}
-              <MgidWidget id="M838028ScriptRootC1373773" src="https://jsc.mgid.com/m/i/missingperson.online.1373773.js"></MgidWidget>
+              <MgidWidget
+                id="M838028ScriptRootC1373773"
+                src="https://jsc.mgid.com/m/i/missingperson.online.1373773.js"
+              ></MgidWidget>
               <h4 className="text-center pt-5 pb-5 h2">Related blog</h4>
               <div className="row">{showRelatedBlog()}</div>
             </div>
           </article>
           {/* smart mgid */}
-          <MgidWidget id="M838028ScriptRootC1373743" src="https://jsc.mgid.com/m/i/missingperson.online.1373743.js"></MgidWidget>
-          
+          <MgidWidget
+            id="M838028ScriptRootC1373743"
+            src="https://jsc.mgid.com/m/i/missingperson.online.1373743.js"
+          ></MgidWidget>
         </main>
       </Layout>
     </React.Fragment>
