@@ -119,10 +119,12 @@ const Blogs = ({ blogs, categories, tags, totalBlogs, blogsLimit, blogSkip, rout
                     <div className="text-center pt-5 pb-5">{loadMoreButton()}</div>
                 </main>
                 <style jsx>{`
+                @media only screen and (max-width: 2000px) and (min-width: 1000px) {
         main {
            padding-left:25%;
            padding-right:25%;
         }
+    }
       `}</style>
             </Layout>
         </React.Fragment>

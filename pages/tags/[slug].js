@@ -47,10 +47,12 @@ const Tag = ({ tag, blogs, query }) => {
                             </div>
                         </header>
                         <style jsx>{`
+                @media only screen and (max-width: 2000px) and (min-width: 1000px) {
         .class {
            padding-left:25%;
            padding-right:25%;
         }
+    }
       `}</style>
                     </div>
                 </main>

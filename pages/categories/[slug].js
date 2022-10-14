@@ -49,10 +49,12 @@ const Category = ({ category, blogs, query }) => {
                     </div>
                 </main>
                 <style jsx>{`
+                @media only screen and (max-width: 2000px) and (min-width: 1000px) {
         .class {
            padding-left:25%;
            padding-right:25%;
         }
+    }
       `}</style>
             </Layout>
         </React.Fragment>
