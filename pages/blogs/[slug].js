@@ -60,7 +60,13 @@ const SingleBlog = ({ blog, query }) => {
   );
   const showBlog = (lines) =>
     lines.map((l, i) => (
-      <div className="col-md-12 lead">{renderHTML(lines[i])}</div>
+      <div>
+        <div id="M838028ScriptRootC1373764"></div>
+<script src="https://jsc.mgid.com/m/i/missingperson.online.1373764.js" async></script>
+<div className="col-md-12 lead">{renderHTML(lines[i])}</div>
+      </div>
+
+      
     ));
   const showBlogCategories = (blog) =>
     blog.categories.map((c, i) => (
@@ -152,8 +158,7 @@ const SingleBlog = ({ blog, query }) => {
             <div className="container">
               <AdUnit />
               <section>
-              <div id="M838028ScriptRootC1373764"></div>
-<script src="https://jsc.mgid.com/m/i/missingperson.online.1373764.js" async></script>
+              
                 {showBlog(lines)}
                 </section>
             </div>
