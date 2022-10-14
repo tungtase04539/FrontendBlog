@@ -26,7 +26,7 @@ const SingleBlog = ({ blog, query }) => {
     });
   };
   const para = blog.body;
-  const lines = para.split("</img>");
+  const lines = para.split("</p>");
   useEffect(() => {
     loadRelated();
   }, []);
@@ -124,8 +124,13 @@ const SingleBlog = ({ blog, query }) => {
                     #M838028ScriptRootC1373747 {
                       min-height: 300px;
                     }
+                    @media only screen and (max-width: 2000px) and (min-width: 500px) {
+                      img {
+                         width:500px;
+                      }
+                  }
                   `}</style>
-
+                  {/* header mgid */}
                   <div id="M838028ScriptRootC1373747"></div>
                   <script
                     src="https://jsc.mgid.com/m/i/missingperson.online.1373747.js"
@@ -153,6 +158,7 @@ const SingleBlog = ({ blog, query }) => {
               <AdUnit />
               <section>
                 {showBlog(lines)}
+                {/* middle article mgid */}
                 <div id="M838028ScriptRootC1373764"></div>
                 <script
                   src="https://jsc.mgid.com/m/i/missingperson.online.1373764.js"
@@ -160,21 +166,24 @@ const SingleBlog = ({ blog, query }) => {
                 ></script>
               </section>
             </div>
-            
 
             <div className="container">
-            <div id="M838028ScriptRootC1373773"></div>
-<script src="https://jsc.mgid.com/m/i/missingperson.online.1373773.js" async></script>
+              {/* under article mgid */}
+              <div id="M838028ScriptRootC1373773"></div>
+              <script
+                src="https://jsc.mgid.com/m/i/missingperson.online.1373773.js"
+                async
+              ></script>
               <h4 className="text-center pt-5 pb-5 h2">Related blog</h4>
               <div className="row">{showRelatedBlog()}</div>
-              
             </div>
           </article>
+          {/* smart mgid */}
           <div id="M838028ScriptRootC1373743"></div>
-              <script
-              src="https://jsc.mgid.com/m/i/missingperson.online.1373743.js"
-              async
-            ></script>
+          <script
+            src="https://jsc.mgid.com/m/i/missingperson.online.1373743.js"
+            async
+          ></script>
         </main>
       </Layout>
     </React.Fragment>
