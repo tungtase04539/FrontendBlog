@@ -118,6 +118,12 @@ const Blogs = ({ blogs, categories, tags, totalBlogs, blogsLimit, blogSkip, rout
                     <div className="container">{showLoadedBlogs()}</div>
                     <div className="text-center pt-5 pb-5">{loadMoreButton()}</div>
                 </main>
+                <style jsx>{`
+        main {
+           padding-left:25%;
+           padding-right:25%;
+        }
+      `}</style>
             </Layout>
         </React.Fragment>
     );
