@@ -160,7 +160,6 @@ const SingleBlog = ({ blog, query }) => {
                 ></script>
               </section>
             </div>
-            <div id="M838028ScriptRootC1373743"></div>
             
 
             <div className="container">
