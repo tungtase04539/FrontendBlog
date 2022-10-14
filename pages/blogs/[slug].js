@@ -139,11 +139,7 @@ const SingleBlog = ({ blog, query }) => {
                     }
                   `}</style>
                   {/* header mgid */}
-                  <div id="M838028ScriptRootC1373747"></div>
-                  <script
-                    src="https://jsc.mgid.com/m/i/missingperson.online.1373747.js"
-                    async
-                  ></script>
+                  <MgidWidget id="M838028ScriptRootC1373747" src="https://jsc.mgid.com/m/i/missingperson.online.1373747.js"></MgidWidget>
 
                   <p className="lead mt-3 mark">
                     Written by{" "}
@@ -172,21 +168,14 @@ const SingleBlog = ({ blog, query }) => {
 
             <div className="container">
               {/* under article mgid */}
-              <div id="M838028ScriptRootC1373773"></div>
-              <script
-                src="https://jsc.mgid.com/m/i/missingperson.online.1373773.js"
-                async
-              ></script>
+              <MgidWidget id="M838028ScriptRootC1373773" src="https://jsc.mgid.com/m/i/missingperson.online.1373773.js"></MgidWidget>
               <h4 className="text-center pt-5 pb-5 h2">Related blog</h4>
               <div className="row">{showRelatedBlog()}</div>
             </div>
           </article>
           {/* smart mgid */}
-          <div id="M838028ScriptRootC1373743"></div>
-          <script
-            src="https://jsc.mgid.com/m/i/missingperson.online.1373743.js"
-            async
-          ></script>
+          <MgidWidget id="M838028ScriptRootC1373743" src="https://jsc.mgid.com/m/i/missingperson.online.1373743.js"></MgidWidget>
+          
         </main>
       </Layout>
     </React.Fragment>
