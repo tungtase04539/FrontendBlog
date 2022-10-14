@@ -139,6 +139,8 @@ const SingleBlog = ({ blog, query }) => {
             <AdUnit/>
                       <section>{showBlog(lines)}</section>
             </div>
+<div id="M838028ScriptRootC1373743"></div>
+<script src="https://jsc.mgid.com/m/i/missingperson.online.1373743.js" async></script>
 
             <div className="container">
               <h4 className="text-center pt-5 pb-5 h2">Related blog</h4>
