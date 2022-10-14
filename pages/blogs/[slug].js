@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Script from "next/script";
 import Layout from "../../components/Layout";
-import { useAmp } from 'next/amp'
+import { useAmp } from "next/amp";
 import { useState, useEffect } from "react";
 import { singleBlog, listRelated } from "../../actions/blog";
 import { API, DOMAIN, APP_NAME, FB_APP_ID } from "../../config";
@@ -13,7 +13,7 @@ import React from "react";
 import DisqusThread from "../../components/DisqusThread";
 import { AdUnit } from "../../components/AdUnit";
 const SingleBlog = ({ blog, query }) => {
-    const isAmp = useAmp()
+  const isAmp = useAmp();
   const [related, setRelated] = useState([]);
 
   const loadRelated = () => {
@@ -26,7 +26,7 @@ const SingleBlog = ({ blog, query }) => {
     });
   };
   const para = blog.body;
-  const lines = para.split("</p>");
+  const lines = para.split("</img>");
   useEffect(() => {
     loadRelated();
   }, []);
@@ -51,8 +51,11 @@ const SingleBlog = ({ blog, query }) => {
       />
       <meta property="og:image:type" content="image/jpg" />
       <meta property="fb:app_id" content={`${FB_APP_ID}`} />
-      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2941853731855587"
-     crossorigin="anonymous"></Script>
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2941853731855587"
+        crossorigin="anonymous"
+      ></Script>
     </Head>
   );
   const showBlog = (lines) =>
@@ -99,7 +102,6 @@ const SingleBlog = ({ blog, query }) => {
     <React.Fragment>
       {head()}
       <Layout>
-      
         <main>
           <article>
             <div className="container">
@@ -119,13 +121,16 @@ const SingleBlog = ({ blog, query }) => {
                     {blog.title}
                   </h3>
                   <style jsx>{`
-    #M838028ScriptRootC1373747 {
-        min-height: 300px;
-    }`
-  }</style>
+                    #M838028ScriptRootC1373747 {
+                      min-height: 300px;
+                    }
+                  `}</style>
 
-<div id="M838028ScriptRootC1373747"></div>
-<script src="https://jsc.mgid.com/m/i/missingperson.online.1373747.js" async></script>
+                  <div id="M838028ScriptRootC1373747"></div>
+                  <script
+                    src="https://jsc.mgid.com/m/i/missingperson.online.1373747.js"
+                    async
+                  ></script>
 
                   <p className="lead mt-3 mark">
                     Written by{" "}
@@ -145,11 +150,18 @@ const SingleBlog = ({ blog, query }) => {
               </section>
             </div>
             <div className="container">
-            <AdUnit/>
-                      <section>{showBlog(lines)}</section>
+              <AdUnit />
+              <section>
+              <div id="M838028ScriptRootC1373764"></div>
+<script src="https://jsc.mgid.com/m/i/missingperson.online.1373764.js" async></script>
+                {showBlog(lines)}
+                </section>
             </div>
             <div id="M838028ScriptRootC1373743"></div>
-            <script src="https://jsc.mgid.com/m/i/missingperson.online.1373743.js" async></script>
+            <script
+              src="https://jsc.mgid.com/m/i/missingperson.online.1373743.js"
+              async
+            ></script>
 
             <div className="container">
               <h4 className="text-center pt-5 pb-5 h2">Related blog</h4>
