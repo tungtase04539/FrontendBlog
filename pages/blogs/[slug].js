@@ -60,7 +60,10 @@ const SingleBlog = ({ blog, query }) => {
   );
   const showBlog = (lines) =>
     lines.map((l, i) => (
+      <>
       <div className="col-md-12 lead">{renderHTML(lines[i])}</div>
+      {i%6 == 0 && <p>ÁDHKJAS</p>}
+      </>
     ));
   const showBlogCategories = (blog) =>
     blog.categories.map((c, i) => (
@@ -159,16 +162,14 @@ const SingleBlog = ({ blog, query }) => {
               <section>
                 {showBlog(lines)}
                 {/* middle article mgid */}
-                <div id="M838028ScriptRootC1373764"></div>
-                <script
-                  src="https://jsc.mgid.com/m/i/missingperson.online.1373764.js"
-                  async
-                ></script>
+                 
               </section>
             </div>
 
             <div className="container">
               {/* under article mgid */}
+              <div id="M838028ScriptRootC1373773"></div>
+              <div id="M838028ScriptRootC1373773"></div>
               <div id="M838028ScriptRootC1373773"></div>
               <script
                 src="https://jsc.mgid.com/m/i/missingperson.online.1373773.js"
