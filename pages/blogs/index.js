@@ -11,16 +11,16 @@ import React from 'react'
 const Blogs = ({ blogs, categories, tags, totalBlogs, blogsLimit, blogSkip, router }) => {
     const head = () => (
         <Head>
-            <title>Programming blogs | {APP_NAME}</title>
+            <title>News | {APP_NAME}</title>
             <meta
                 name="description"
-                content="Programming blogs and tutorials on react node next vue php laravel and web developoment"
+                content="Missing Person"
             />
             <link rel="canonical" href={`${DOMAIN}${router.pathname}`} />
             <meta property="og:title" content={`Latest web developoment tutorials | ${APP_NAME}`} />
             <meta
                 property="og:description"
-                content="Programming blogs and tutorials on react node next vue php laravel and web developoment"
+                content="Missing Person"
             />
             <meta property="og:type" content="webiste" />
             <meta property="og:url" content={`${DOMAIN}${router.pathname}`} />
