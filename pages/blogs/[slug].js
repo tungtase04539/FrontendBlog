@@ -60,13 +60,7 @@ const SingleBlog = ({ blog, query }) => {
   );
   const showBlog = (lines) =>
     lines.map((l, i) => (
-      <div>
-        <div id="M838028ScriptRootC1373764"></div>
-<script src="https://jsc.mgid.com/m/i/missingperson.online.1373764.js" async></script>
-<div className="col-md-12 lead">{renderHTML(lines[i])}</div>
-      </div>
-
-      
+      <div className="col-md-12 lead">{renderHTML(lines[i])}</div>
     ));
   const showBlogCategories = (blog) =>
     blog.categories.map((c, i) => (
@@ -160,6 +154,8 @@ const SingleBlog = ({ blog, query }) => {
               <section>
               
                 {showBlog(lines)}
+                <div id="M838028ScriptRootC1373764"></div>
+<script src="https://jsc.mgid.com/m/i/missingperson.online.1373764.js" async></script>
                 </section>
             </div>
             <div id="M838028ScriptRootC1373743"></div>
