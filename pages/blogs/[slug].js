@@ -118,6 +118,15 @@ const SingleBlog = ({ blog, query }) => {
                   <h3 className="display-5 pb-1 pt-1 text-center font-weight-bold">
                     {blog.title}
                   </h3>
+                  <style jsx>{`
+    #M838028ScriptRootC1373747 {
+        min-height: 300px;
+    }`
+  }</style>
+
+<div id="M838028ScriptRootC1373747"></div>
+<script src="https://jsc.mgid.com/m/i/missingperson.online.1373747.js" async></script>
+
                   <p className="lead mt-3 mark">
                     Written by{" "}
                     <Link href={`/profile/${blog.postedBy.username}`}>
@@ -139,8 +148,8 @@ const SingleBlog = ({ blog, query }) => {
             <AdUnit/>
                       <section>{showBlog(lines)}</section>
             </div>
-<div id="M838028ScriptRootC1373743"></div>
-<script src="https://jsc.mgid.com/m/i/missingperson.online.1373743.js" async></script>
+            <div id="M838028ScriptRootC1373743"></div>
+            <script src="https://jsc.mgid.com/m/i/missingperson.online.1373743.js" async></script>
 
             <div className="container">
               <h4 className="text-center pt-5 pb-5 h2">Related blog</h4>
