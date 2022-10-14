@@ -10,8 +10,9 @@ const MgidWidget = (props) => {
 
   return (
     <div>
+        <Helmet>
       <div id={id} />
-      <Helmet>
+      
         <script src={src} async />
       </Helmet>
     </div>
