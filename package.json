@@ -27,6 +27,7 @@
     "quill-video-resize-shambou": "^1.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.4.0",
     "react-quill": "^2.0.0",
     "react-render-html": "^0.6.0",
