@@ -12,6 +12,7 @@ import SmallCard from "../../components/blog/SmallCard";
 import React from "react";
 import DisqusThread from "../../components/DisqusThread";
 import { AdUnit } from "../../components/AdUnit";
+import { MgidWidget } from "../../components/MgidWidget";
 const SingleBlog = ({ blog, query }) => {
   const isAmp = useAmp();
   const [related, setRelated] = useState([]);
@@ -64,11 +65,7 @@ const SingleBlog = ({ blog, query }) => {
         <div className="col-md-12 lead">{renderHTML(lines[i])}</div>
         {i % 6 == 0 && (
           <div>
-            <div id="M838028ScriptRootC1373764"></div>
-            <script
-              src="https://jsc.mgid.com/m/i/missingperson.online.1373764.js"
-              async
-            ></script>
+            <MgidWidget id="M838028ScriptRootC1373764" src="https://jsc.mgid.com/m/i/missingperson.online.1373764.js"></MgidWidget>
           </div>
         )}
       </React.Fragment>
