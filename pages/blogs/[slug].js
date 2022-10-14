@@ -152,24 +152,27 @@ const SingleBlog = ({ blog, query }) => {
             <div className="container">
               <AdUnit />
               <section>
-              
                 {showBlog(lines)}
                 <div id="M838028ScriptRootC1373764"></div>
-<script src="https://jsc.mgid.com/m/i/missingperson.online.1373764.js" async></script>
-                </section>
+                <script
+                  src="https://jsc.mgid.com/m/i/missingperson.online.1373764.js"
+                  async
+                ></script>
+              </section>
             </div>
             <div id="M838028ScriptRootC1373743"></div>
-            <script
+            
+
+            <div className="container">
+            <div id="M838028ScriptRootC1373773"></div>
+<script src="https://jsc.mgid.com/m/i/missingperson.online.1373773.js" async></script>
+              <h4 className="text-center pt-5 pb-5 h2">Related blog</h4>
+              <div className="row">{showRelatedBlog()}</div>
+              <script
               src="https://jsc.mgid.com/m/i/missingperson.online.1373743.js"
               async
             ></script>
-
-            <div className="container">
-              <h4 className="text-center pt-5 pb-5 h2">Related blog</h4>
-              <div className="row">{showRelatedBlog()}</div>
             </div>
-
-            <div className="container pb-5">{showComments()}</div>
           </article>
         </main>
       </Layout>
