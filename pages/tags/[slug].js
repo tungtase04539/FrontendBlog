@@ -38,13 +38,20 @@ const Tag = ({ tag, blogs, query }) => {
                             <div className="col-md-12 pt-3">
                                 <h1 className="display-4 font-weight-bold">{tag.name}</h1>
                                 {blogs.map((b, i) => (
-                                    <div>
-                                        <Card key={i} blog={b} />
+                                    <div className='class'>
+                                        <Card className="container" key={i} blog={b} />
                                         <hr />
                                     </div>
+                                    
                                 ))}
                             </div>
                         </header>
+                        <style jsx>{`
+        .class {
+           padding-left:25%;
+           padding-right:25%;
+        }
+      `}</style>
                     </div>
                 </main>
             </Layout>
