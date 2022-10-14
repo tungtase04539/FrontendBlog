@@ -11,7 +11,7 @@ import React from 'react'
 const Blogs = ({ blogs, categories, tags, totalBlogs, blogsLimit, blogSkip, router }) => {
     const head = () => (
         <Head>
-            <title>News | {APP_NAME}</title>
+            <title>News | Missing Person</title>
             <meta
                 name="description"
                 content="Missing Person"
