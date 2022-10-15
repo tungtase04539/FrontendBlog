@@ -182,11 +182,13 @@ const SingleBlog = ({ blog, query }) => {
             </div>
           </article>
           {/* smart mgid */}
-          <MgidWidget
+          
+        </main>
+        <div></div>
+        <MgidWidget
             id="M838028ScriptRootC1373743"
             src="https://jsc.mgid.com/m/i/missingperson.online.1373743.js"
           ></MgidWidget>
-        </main>
       </Layout>
     </React.Fragment>
   );
