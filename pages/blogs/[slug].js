@@ -65,11 +65,11 @@ const SingleBlog = ({ blog, query }) => {
       <React.Fragment key={i}>
         <section>
           <div className="col-md-12 lead">{renderHTML(lines[i])}</div>
-          {i % 6 == 0 && (
+          {i % 7 == 0 && (
             <div>
               <MgidWidget
-                id={"M838028ScriptRootC"+list[i/6]}
-                src={"https://jsc.mgid.com/m/i/missingperson.online."+list[i/6]+".js"}
+                id={"M838028ScriptRootC"+list[i/7]}
+                src={"https://jsc.mgid.com/m/i/missingperson.online."+list[i/7]+".js"}
               ></MgidWidget>
             </div>
           )}
