@@ -182,7 +182,7 @@ const SingleBlog = ({ blog, query }) => {
             </div>
             <MgidWidget
             id="M838028ScriptRootC1373743"
-            src="https://jsc.mgid.com/m/i/missingperson.online.1373743.js" async
+            src="https://jsc.mgid.com/m/i/missingperson.online.1373743.js" 
           ></MgidWidget>
           </article>
           {/* smart mgid */}
