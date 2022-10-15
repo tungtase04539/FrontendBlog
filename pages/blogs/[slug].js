@@ -59,7 +59,7 @@ const SingleBlog = ({ blog, query }) => {
       ></Script>
     </Head>
   );
-  const list =[1373764,1374131,1374132]
+  const list =[1373764,1374131,1374134]
   const showBlog = (lines) =>
     lines.map((l, i) => (
       <React.Fragment key={i}>
@@ -69,7 +69,7 @@ const SingleBlog = ({ blog, query }) => {
             <div>
               <MgidWidget
                 id={"M838028ScriptRootC"+list[i/6]}
-                src={"https://jsc.mgid.com/m/i/missingperson.online."+list[i/6]+"1373764.js"}
+                src={"https://jsc.mgid.com/m/i/missingperson.online."+list[i/6]+".js"}
               ></MgidWidget>
             </div>
           )}
