@@ -138,7 +138,7 @@ const SingleBlog = ({ blog, query }) => {
                   </h3>
                   <style jsx>{`
                     #M838028ScriptRootC1373747 {
-                      min-height: 300px;
+                      min-height: 250px;
                     }
                   `}</style>
                   {/* header mgid */}
