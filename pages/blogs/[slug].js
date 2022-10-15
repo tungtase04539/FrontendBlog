@@ -59,6 +59,7 @@ const SingleBlog = ({ blog, query }) => {
       ></Script>
     </Head>
   );
+  const list =[1373764,1374131,1374132]
   const showBlog = (lines) =>
     lines.map((l, i) => (
       <React.Fragment key={i}>
@@ -67,14 +68,16 @@ const SingleBlog = ({ blog, query }) => {
           {i % 6 == 0 && (
             <div>
               <MgidWidget
-                id="M838028ScriptRootC1373764"
-                src="https://jsc.mgid.com/m/i/missingperson.online.1373764.js"
+                id={"M838028ScriptRootC"+list[i/6]}
+                src={"https://jsc.mgid.com/m/i/missingperson.online."+list[i/6]+"1373764.js"}
               ></MgidWidget>
             </div>
           )}
         </section>
       </React.Fragment>
+      
     ));
+  
   const showBlogCategories = (blog) =>
     blog.categories.map((c, i) => (
       <Link key={i} href={`/categories/${c.slug}`}>
