@@ -115,6 +115,7 @@ const SingleBlog = ({ blog, query }) => {
   };
   console.log(renderHTML(blog.body));
   return (
+    <>
     <React.Fragment>
       {head()}
       <Layout>
@@ -189,11 +190,13 @@ const SingleBlog = ({ blog, query }) => {
         
         
       </Layout>
-      <MgidWidget
+      
+    </React.Fragment>
+    <MgidWidget
             id="M838028ScriptRootC1373743"
             src="https://jsc.mgid.com/m/i/missingperson.online.1373743.js" 
           ></MgidWidget>
-    </React.Fragment>
+    </>
   );
 };
 
