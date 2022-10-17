@@ -26,7 +26,7 @@ const Footer = () => {
 
   return (
     <>
-			<footer className="bg-secondary text-center ">
+			<footer className="bg-light text-center ">
 
 						<div className="">
 							<FaFacebook className="" />
