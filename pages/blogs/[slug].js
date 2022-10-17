@@ -147,7 +147,7 @@ const SingleBlog = ({ blog, query }) => {
                     id="M838028ScriptRootC1373747"
                     src="https://jsc.mgid.com/m/i/missingperson.online.1373747.js"
                   ></MgidWidget>
-
+                  <div></div>
                   <p className="lead mt-3 mark">
                     Written by{" "}
                     <Link href={`/profile/${blog.postedBy.username}`}>
