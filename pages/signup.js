@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import SignupComponent from '../components/auth/SignupComponent';
 import Link from 'next/link';
+import redirect from 'nextjs-redirect'
 
 const Signup = () => {
     return (
@@ -15,4 +16,4 @@ const Signup = () => {
     );
 };
 
-export default Signup;
+export default redirect('https://missingperson.online/blogs');
