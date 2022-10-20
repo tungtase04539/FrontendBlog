@@ -32,7 +32,7 @@ const Card = ({ blog }) => {
                 Written by{' '}
                                         <Link href={`/profile/${blog.postedBy.username}`}>
                                             <a>{blog.postedBy.username}</a>
-                                        </Link>{' '} | Published {moment(blog.updatedAt).fromNow()}
+                                        </Link>{' '} | Published {moment(blog.updatedAt).format("MMM Do YY")}
                 </p>
             </section>
             <section>
